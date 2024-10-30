@@ -14,29 +14,17 @@
             padding: 50px;
             color: #333;
         }
-        .header {
+        .header, .flags {
             display: flex;
-            align-items: center;
             justify-content: center;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-        .flags {
-            display: flex;
-            justify-content: space-between;
             align-items: center;
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
+            gap: 20px;
         }
-        .flags img {
-            width: 50px;
+        .flags img, .header img {
             height: auto;
         }
-        .volt-logo {
-            width: 120px;
-            height: auto;
-            margin-bottom: 10px;
+        .volt-logo, .sdu-logo { /* Updated class for the SDU logo */
+            width: 120px; /* Ensure logos are the same width */
         }
         h1 {
             font-size: 2.5rem;
@@ -82,23 +70,17 @@
         a.button:hover {
             background-color: #3e1b61; /* Darker shade for hover effect */
         }
-        .footer-note {
+        .footer-note, .contact {
             color: #502379;
             font-size: 1.1rem;
-            margin-top: 40px;
-        }
-        .contact {
-            font-size: 1.1rem;
-            margin-top: 10px;
-            color: #502379; /* Volt Purple for contact text */
         }
     </style>
 </head>
 <body>
-    <!-- Flags aligned on left and right with Volt logo centered above the title -->
     <div class="flags">
         <img src="kosovo-flag.png" alt="Kosovo Flag">
         <img class="volt-logo" src="volt-logo.png" alt="Volt Logo">
+        <img class="sdu-logo" src="sdu-logo.png" alt="SDU Logo">  <!-- Updated reference to the SDU logo -->
         <img src="eu-flag.png" alt="EU Flag">
     </div>
     <h1>Kosovar Diaspora & European Integration Survey</h1>
@@ -116,7 +98,6 @@
     <p class="footer-note">
         If you wish to withdraw from the survey at any time, you may do so by clicking the button below.
     </p>
-    <!-- Withdrawal button styled to match the language selection buttons -->
     <a href="https://forms.gle/DTGbp8TXJVi2Cfc77" target="_blank" class="button">Withdraw Consent</a>
 </body>
 </html>
