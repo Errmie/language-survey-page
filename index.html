@@ -16,22 +16,24 @@
         }
         .flags {
             display: flex;
-            justify-content: center;
+            justify-content: space-between; /* Adjust flags to be at the ends and logos in center */
             align-items: center;
-            gap: 10px; /* Reduced gap for a tighter layout */
+            padding: 0 10px; /* Added padding to ensure flags are not too close to the edge */
+            margin-bottom: 20px; /* Space below the flags/logos */
         }
         .flags img {
-            width: 60px; /* Reduced width for smaller flags */
             height: auto;
         }
+        .flag {
+            width: 40px; /* Smaller size for flags */
+        }
         .volt-logo, .sdu-logo {
-            width: 100px; /* Smaller logo sizes */
-            height: auto;
+            width: 120px; /* Larger size for logos */
         }
         h1 {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #502379; /* Volt Purple */
+            color: #502379;
         }
         h2 {
             font-size: 1.8rem;
@@ -44,7 +46,7 @@
             font-size: 1.1rem;
             max-width: 600px;
             margin: 0 auto 20px;
-            color: #502379; /* Volt Purple for introduction text */
+            color: #502379;
         }
         ul {
             list-style: none;
@@ -58,7 +60,7 @@
         a.button {
             text-decoration: none;
             color: white;
-            background-color: #502379; /* Volt Purple */
+            background-color: #502379;
             padding: 15px 20px;
             border-radius: 5px;
             display: block;
@@ -70,7 +72,7 @@
             margin: 20px auto;
         }
         a.button:hover {
-            background-color: #3e1b61; /* Darker shade for hover effect */
+            background-color: #3e1b61;
         }
         .footer-note, .contact {
             color: #502379;
@@ -80,10 +82,12 @@
 </head>
 <body>
     <div class="flags">
-        <img src="kosovo-flag.png" alt="Kosovo Flag">
-        <img class="volt-logo" src="volt-logo.png" alt="Volt Logo">
-        <img class="sdu-logo" src="sdu-logo.png" alt="SDU Logo">  <!-- Make sure the SDU logo filename matches -->
-        <img src="eu-flag.png" alt="EU Flag">
+        <img class="flag" src="kosovo-flag.png" alt="Kosovo Flag">
+        <div>
+            <img class="volt-logo" src="volt-logo.png" alt="Volt Logo">
+            <img class="sdu-logo" src="sdu-logo.png" alt="SDU Logo">
+        </div>
+        <img class="flag" src="eu-flag.png" alt="EU Flag">
     </div>
     <h1>Kosovar Diaspora & European Integration Survey</h1>
     <p>This survey is part of a research collaboration between the Southern University of Denmark and Volt Kosovo, a branch of Volt Europa. Our study aims to understand how members of the Kosovar diaspora in Europe balance their cultural heritage while integrating into their host societies.</p>
