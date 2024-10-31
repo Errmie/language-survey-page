@@ -14,17 +14,19 @@
             padding: 50px;
             color: #333;
         }
-        .header, .flags {
+        .flags {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 10px; /* Reduced gap for a tighter layout */
         }
-        .flags img, .header img {
+        .flags img {
+            width: 60px; /* Reduced width for smaller flags */
             height: auto;
         }
-        .volt-logo, .sdu-logo { /* Updated class for the SDU logo */
-            width: 120px; /* Ensure logos are the same width */
+        .volt-logo, .sdu-logo {
+            width: 100px; /* Smaller logo sizes */
+            height: auto;
         }
         h1 {
             font-size: 2.5rem;
@@ -80,7 +82,7 @@
     <div class="flags">
         <img src="kosovo-flag.png" alt="Kosovo Flag">
         <img class="volt-logo" src="volt-logo.png" alt="Volt Logo">
-        <img class="sdu-logo" src="sdu-logo.png" alt="SDU Logo">  <!-- Updated reference to the SDU logo -->
+        <img class="sdu-logo" src="sdu-logo.png" alt="SDU Logo">  <!-- Make sure the SDU logo filename matches -->
         <img src="eu-flag.png" alt="EU Flag">
     </div>
     <h1>Kosovar Diaspora & European Integration Survey</h1>
